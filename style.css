@@ -1,0 +1,78 @@
+:root { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  :root { font-family: 'Inter var', sans-serif; }
+}
+
+:root {
+    --accent: rgb(0, 132, 255);
+    --secondary: rgb(255, 213, 0);
+    --third: rgb(0, 91, 176);
+    background-color: black;
+}
+
+body {
+    display: grid;
+    justify-items: center;
+    color: white;
+}
+
+.btn {
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: 2em;
+
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+
+    color: white;
+    background-color: var(--accent);
+
+    float: left;
+    cursor: pointer;
+}
+
+h1 {
+   font-weight: 700;
+   font-size: 2.5em; 
+}
+
+.btn:active {
+    background-color: var(--third)
+}
+
+time {
+    background-color: var(--secondary);
+    color: black;
+    
+    font-weight: 500;
+    font-size: 2em;
+
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+
+    margin: 0.5em;
+}
+
+.round {
+    padding: 0.1em;
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+    border: 0px solid black;
+    border-radius: 0.2em;
+}
+
+#vakna {
+    display: none;
+    font-size: 2em;
+    font-weight: 500;
+    text-align: center;
+}
+
+#time-selection-wrapper {
+    margin: 2em;
+    margin-left: 0;
+    margin-right: 0;
+}
+#time-selection select {
+    display: none;
+}
